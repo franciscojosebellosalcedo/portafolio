@@ -1,55 +1,76 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-:root{
-    --bg-color:#ffffff5b;
-    --bor:1px solid #000000;
-    --colorLetter:#000000a5;
-    --colorLetterHover:#000000;
-    --timeHover:.6s;
-    --fontSizeTituloDesk:28px;
+
+:root {
+    --bg-color: #ffffff;
+    --bor: 2px solid #000000;
+    --borderRadio: 8px;
+    --colorLetter: #000000cc;
+    --colorLetterHover: #000000;
+    --colorLetterBtnHover: #ffffff;
+    --timeHover: .6s;
+    --widthContainer: 85%;
+    --heightSection: 80vh;
+    --fontSizeTitulo: 35px;
+    --fonSizeParrafos: 19px;
+    --fontSizeBtn: 19px;
 }
-body{
+
+body {
     background-color: var(--bg-color);
 }
-.portafolio{
+
+html {
+    scroll-behavior: smooth;
+}
+
+.portafolio {
     position: relative;
     height: 200vh;
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
     padding: 20px;
     position: sticky;
     top: 0px;
+    background-color: var(--bg-color);
+    z-index: 1000;
     justify-content: space-around;
     box-shadow: 0px 1px 2px 0px black;
-    
+    border-bottom-left-radius: var(--borderRadio);
+    border-bottom-right-radius: var(--borderRadio);
 }
-.menu_titulo{
+
+.menu_title {
     color: var(--colorLetter);
     cursor: pointer;
-    font-size: var(--fontSizeTituloDesk);
+    font-size: 28px;
     transition: color var(--timeHover);
 
 }
-.menu_titulo:hover{
+
+.menu_title:hover {
     color: var(--colorLetterHover);
 }
-.item_a{
+
+.item_a {
     color: var(--colorLetter);
-    transition: all var(--timeHover) ;
+    transition: all var(--timeHover);
     font-size: 19px;
     position: relative;
 }
-.item_a::before{
+
+.item_a::before {
     content: "";
     border: var(--bor);
-    height: 2px;
+    height: 1px;
     width: 0px;
     position: absolute;
     bottom: 0px;
@@ -57,22 +78,146 @@ body{
     background-color: black;
     transition: width var(--timeHover);
 }
-.item_a:hover::before{
+
+.item_a:hover::before {
     opacity: 1;
     width: 100%;
 }
-.item_a:hover{
+
+.item_a:hover {
     color: var(--colorLetterHover);
 }
-.menu_container{
-    width: 85%;
+
+.menu_container {
+    width: var(--widthContainer);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu_list{
+
+.menu_list {
     display: flex;
     align-items: center;
     gap: 35px;
     justify-content: flex-end;
+}
+
+.inicio {
+    width: var(--widthContainer);
+    margin: 35px auto;
+    scroll-margin-top: 80px;
+    height: var(--heightSection);
+}
+
+.inicio_title {
+    text-align: center;
+    color: var(--colorLetter);
+    font-size: var(--fontSizeTitulo);
+    margin: 0px auto;
+    margin-bottom: 47px;
+    width: max-content;
+    border-bottom: var(--bor);
+}
+
+.inicio_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+    align-items: center;
+}
+
+.person_pinture {
+    width: 38%;
+    height: 100%;
+    background-image: url(../img/foto_portafolio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
+    border-radius: 50%;
+    box-shadow: 0px 5px 8px 0px black;
+    animation: animationImg 4s infinite alternate;
+}
+
+.person {
+    width: 50%;
+}
+
+.person_name {
+    font-size: var(--fontSizeTitulo);
+    color: var(--colorLetter);
+    margin-bottom: 18px;
+}
+
+.person_description {
+    font-size: var(--fonSizeParrafos);
+    margin-bottom: 70px;
+    margin-top: 35px;
+    line-height: 1.4;
+    color: var(--colorLetter);
+}
+
+.slider {
+    font-size: 25px;
+    color: var(--colorLetter);
+}
+
+.person_ocupation {
+    font-size: 20px;
+    color: var(--colorLetter);
+    position: relative;
+}
+
+.person_ocupation::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    border-left: var(--bor);
+    position: absolute;
+    background-color: #ffffff;
+    animation: sliderOcupation 4s steps(12) infinite;
+}
+
+.btn_about_my {
+    padding: 8px 25px;
+    border-radius: var(--borderRadio);
+    color: var(--colorLetter);
+    box-shadow: 1px 1px 3px 0px black;
+    transition: var(--timeHover);
+    font-size: var(--fontSizeBtn);
+}
+
+.btn_about_my:hover {
+    background-color: var(--colorLetter);
+    color: var(--colorLetterBtnHover);
+}
+
+@keyframes sliderOcupation {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes animationImg {
+    from {
+        transform: scale(.9, .9);
+    }
+
+    to {
+        transform: scale(1, 1);
+
+    }
+
 }
