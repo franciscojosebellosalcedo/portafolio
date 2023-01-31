@@ -2,45 +2,231 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio-Francisco</title>
-    <link rel="stylesheet" href="./style/index.css">
-    <script defer src="./js/index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio-Francisco</title>
+  <link rel="stylesheet" href="./style/index.css">
+  <script defer src="./js/index.js"></script>
 </head>
 
 <body>
-    <figure class="to_top"></figure>
-    <div class="portafolio">
-        <nav class="menu">
-            <div class="menu_container">
-                <a href="#" class="menu_title">Francisco B.</a>
-                <ul class="menu_list">
-                    <li class="menu_item"><a class="item_a" href="#inicio">Inicio</a></li>
-                    <li class="menu_item"><a class="item_a" href="#">Sobre mi</a></li>
-                    <li class="menu_item"><a class="item_a" href="#">Proyectos</a></li>
-                    <li class="menu_item"><a class="item_a" href="#">Contacto</a></li>
-                </ul>
+  <figure class="to_top "></figure>
+  <div class="portafolio">
+
+    <nav class="menu">
+      <div class="menu_container ">
+        <a href="index.html" class="menu_title">Francisco B.</a>
+        <ul class="menu_list">
+          <li class="menu_item"><a class="item_a" data-id="0" href="#home">Inicio <span
+                class="element_before "></span></a></li>
+          <li class="menu_item"><a class="item_a" data-id="1" href="#abaut_my">Sobre mi <span
+                class="element_before "></span></a></li>
+          <li class="menu_item"><a class="item_a" data-id="2" href="#skills">Habilidades <span
+                class="element_before "></span></a></li>
+          <li class="menu_item"><a class="item_a" data-id="3" href="#projects">Proyectos <span
+                class="element_before "></span></a></li>
+          <li class="menu_item"><a class="item_a" data-id="4" href="#contact">Contacto <span
+                class="element_before "></span></a></li>
+        </ul>
+      </div>
+      <figure class="figure_theme"></figure>
+    </nav>
+
+    <section class="home section" id="home" data-id="0">
+      <h1 class="home_title title">Inicio</h1>
+      <div class="home_container container_info">
+        <figure class="person_pinture img img_figure_person "></figure>
+        <div class="person">
+          <h1 class="person_name ">Hola, soy Francisco</h1>
+          <!-- <span class="slider span"></span> -->
+          <span class="person_ocupation span"></span>
+          <p class="person_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia corrupti quod.
+            Molestiae quia corrupti quod.
+          </p>
+          <a class="btn_about_my" href="#contact">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="abaut_my section" id="abaut_my" data-id="1">
+      <h1 class="title_sobre_mi title">Sobre mí</h1>
+      <div class="abaut_my_container container_info">
+        <div class="abaut_my_info">
+          <p class="abaut_my_descrption">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo repellendus
+            harum, optio incidunt odit rerum, suscipit consectetur animi eos vitae commodi illo sed! Aliquid dolor hic
+            delectus minima reiciendis vero.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo repellendus
+          </p>
+          <h3 class="abaut_my_title">Datos personales</h3>
+          <div class="abaut_my_container_data">
+            <p class="abaut_my_data">Nombres: <span class="names">Francisco José</span></p>
+            <p class="abaut_my_data">Apellidos: <span class="sur_names">Bello Salcedo</span></p>
+            <p class="abaut_my_data">Correo: <span class="email">franciscojosebellosalcedo@gmail.com</span></p>
+            <p class="abaut_my_data">Telefono: <span class="phone">320 756 6039</span></p>
+            <p class="abaut_my_data">Direccion: <span class="direction">Arjona - San Rafael De La Cruz</span></p>
+          </div>
+          <a class="abaut_my_dowload_cv" href="#">Descargar CV</a>
+        </div>
+        <figure class="abaut_my_image img img_figure_abaut"></figure>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills" data-id="2">
+      <h1 class="title_stills title">Habilidades</h1>
+      <!-- <h3 class="skills_title2">Mi nivel técnico</h3> -->
+      <div class="skills_container">
+        <div class="skills_container_lenguages container_info">
+          <div class="skills_front_end container">
+            <h3 class="skills_front_end_title skill_title">Front-end</h3>
+            <ul class="list_languages list_front_end">
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>HTML
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>CSS
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>JAVASCRIPT
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>REACT
+              </li>
+            </ul>
+          </div>
+          <div class="skills_back_end container">
+            <h3 class="skills_back_end_title skill_title">Back-end</h3>
+            <ul class="list_languages list_back_end">
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>NODE JS
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>EXPRESS
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>JAVASCRIPT
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>PYTHON
+              </li>
+              <li class="list_item_li">
+                <figure class="item_figure"></figure>FLASK
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <ul class="skills_bland">
+          <li class="list_item_li skill_li_bland">
+            <figure class="item_figure"></figure> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            voluptatem natus optio error pariatur illo?
+          </li>
+          <li class="list_item_li skill_li_bland">
+            <figure class="item_figure"></figure> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            voluptatem natus optio error pariatur illo?
+          </li>
+          <li class="list_item_li skill_li_bland">
+            <figure class="item_figure"></figure> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            voluptatem natus optio error pariatur illo?
+          </li>
+          <li class="list_item_li skill_li_bland">
+            <figure class="item_figure"></figure> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            voluptatem natus optio error pariatur illo?
+          </li>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" data-id="3">
+      <h1 class="title_projects title">Proyectos</h1>
+      <div class="projects_container projects_info">
+        <ul class="filter_projects filter">
+          <li class="list_filter filter_li">
+            <figure class="filter_figure figure_all"></figure><button class="filter_button filter_btn">Todos</button>
+          </li>
+          <li class="list_filter filter_li">
+            <figure class="filter_figure figure_web"></figure><button class="filter_button filter_btn">Web</button>
+          </li>
+          <li class="list_filter filter_li">
+            <figure class="filter_figure figure_app"></figure><button class="filter_button filter_btn">App</button>
+          </li>
+          <li class="list_filter filter_li">
+            <figure class="filter_figure figure_design"></figure><button
+              class="filter_button filter_btn">Diseño</button>
+          </li>
+        </ul>
+        <div class="grid_projects">
+
+          <div class="card">
+            <figure class="card_img_project"></figure>
+            <h4 class="card_name_project">To do list</h4>
+            <div class="card_info">
+              <p class="card_info_decription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, amet?
+              </p>
+              <a class="card_info_see" href="#">Ver</a>
             </div>
-        </nav>
-        <section class="inicio" id="inicio">
-            <h1 class="inicio_title">Inicio</h1>
-            <div class="inicio_container">
-                <figure class="person_pinture"></figure>
-                <div class="person">
-                    <h1 class="person_name ">Francisco José Bello Salcedo</h1>
-                    <span class="slider span">Soy</span>
-                    <span class="person_ocupation span"></span>
-                    <p class="person_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia corrupti quod.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia corrupti quod.
-                    </p>
-                    <a class="btn_about_my" href="#">Sobre mí</a>
-                </div>
+          </div>
+          <div class="card">
+            <figure class="card_img_project"></figure>
+            <h4 class="card_name_project">To do list</h4>
+            <div class="card_info">
+              <p class="card_info_decription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, amet?
+              </p>
+              <a class="card_info_see" href="#">Ver</a>
             </div>
-        </section>
-    </div>
+          </div>
+          <div class="card">
+            <figure class="card_img_project"></figure>
+            <h4 class="card_name_project">To do list</h4>
+            <div class="card_info">
+              <p class="card_info_decription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, amet?
+              </p>
+              <a class="card_info_see" href="#">Ver</a>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="card_img_project"></figure>
+            <h4 class="card_name_project">To do list</h4>
+            <div class="card_info">
+              <p class="card_info_decription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, amet?
+              </p>
+              <a class="card_info_see" href="#">Ver</a>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="card_img_project"></figure>
+            <h4 class="card_name_project">To do list</h4>
+            <div class="card_info">
+              <p class="card_info_decription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, amet?
+              </p>
+              <a class="card_info_see" href="#">Ver</a>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="card_img_project"></figure>
+            <h4 class="card_name_project">To do list</h4>
+            <div class="card_info">
+              <p class="card_info_decription">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, amet?
+              </p>
+              <a class="card_info_see" href="#">Ver</a>
+            </div>
+          </div>
+          
+
+        </div>
+
+      </div>
+    </section>
+
+
+  </div>
 </body>
 
 </html>
